@@ -12,12 +12,12 @@ import { getStorage, ref, uploadBytes, getDownloadURL }
 
 // ── GANTI dengan konfigurasi Firebase project Anda ──
 const firebaseConfig = {
-  apiKey:            "YOUR_API_KEY",
-  authDomain:        "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId:         "YOUR_PROJECT_ID",
-  storageBucket:     "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId:             "YOUR_APP_ID"
+apiKey: "AIzaSyDQ7EcH1DxrZ2rw6JCOd7e6QDVfchXwirY",
+  authDomain: "rt04-bsr.firebaseapp.com",
+  projectId: "rt04-bsr",
+  storageBucket: "rt04-bsr.firebasestorage.app",
+  messagingSenderId: "626109108558",
+  appId: "1:626109108558:web:9220070f660d6e85814e1f"
 };
 
 const app     = initializeApp(firebaseConfig);
