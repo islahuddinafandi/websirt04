@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website RT 005 / RW 012 — Kelurahan Cipete Utara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <div class="logo-emblem">RT</div>
+        <div class="logo-text">
+          <span class="logo-rt">RT 005 / RW 012</span>
+          <span class="logo-kel">Kel. Cipete Utara, Jakarta Selatan</span>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda" class="nav-link">Beranda</a></li>
+        <li><a href="#pengumuman" class="nav-link">Pengumuman</a></li>
+        <li><a href="#layanan" class="nav-link">Layanan</a></li>
+        <li><a href="#pengurus" class="nav-link">Pengurus</a></li>
+        <li><a href="#galeri" class="nav-link">Galeri</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="beranda">
+    <div class="hero-bg">
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🏘️ Melayani Warga dengan Sepenuh Hati</div>
+      <h1 class="hero-title">Selamat Datang di<br/><span class="accent-text">RT 005 / RW 012</span></h1>
+      <p class="hero-sub">Kelurahan Cipete Utara · Kecamatan Cilandak · Jakarta Selatan</p>
+      <p class="hero-desc">Portal resmi warga untuk informasi, pengajuan surat, dan pelayanan administrasi lingkungan.</p>
+      <div class="hero-actions">
+        <a href="#layanan" class="btn btn-primary">Ajukan Surat</a>
+        <a href="#pengumuman" class="btn btn-outline">Lihat Pengumuman</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <span class="stat-num">248</span>
+        <span class="stat-label">Kepala Keluarga</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">891</span>
+        <span class="stat-label">Total Warga</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">12</span>
+        <span class="stat-label">RT dalam RW</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">24/7</span>
+        <span class="stat-label">Siap Melayani</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENGUMUMAN -->
+  <section class="section" id="pengumuman">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Terbaru</div>
+        <h2 class="section-title">Pengumuman <span class="accent">Warga</span></h2>
+        <p class="section-desc">Informasi dan pemberitahuan resmi dari pengurus RT</p>
+      </div>
+      <div class="announce-grid">
+        <article class="announce-card featured">
+          <div class="announce-badge urgent">⚡ Penting</div>
+          <div class="announce-date">20 Mei 2025</div>
+          <h3>Kerja Bakti Minggu, 25 Mei 2025</h3>
+          <p>Seluruh warga RT 005 diharapkan hadir dalam kegiatan kerja bakti membersihkan selokan dan taman lingkungan. Berkumpul pukul 07.00 WIB di Pos Ronda.</p>
+          <a href="#" class="announce-link">Baca Selengkapnya →</a>
+        </article>
+        <article class="announce-card">
+          <div class="announce-badge info">📋 Info</div>
+          <div class="announce-date">15 Mei 2025</div>
+          <h3>Pembayaran Iuran Kebersihan</h3>
+          <p>Iuran kebersihan bulan Mei sudah dapat dibayarkan. Harap segera melunasi sebelum tanggal 30 Mei 2025.</p>
+          <a href="#" class="announce-link">Baca Selengkapnya →</a>
+        </article>
+        <article class="announce-card">
+          <div class="announce-badge event">🎉 Kegiatan</div>
+          <div class="announce-date">10 Mei 2025</div>
+          <h3>Posyandu Balita & Lansia</h3>
+          <p>Posyandu rutin akan dilaksanakan pada Kamis, 22 Mei 2025 pukul 09.00 WIB di Rumah Pak RW.</p>
+          <a href="#" class="announce-link">Baca Selengkapnya →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAYANAN / FORMS -->
+  <section class="section section-dark" id="layanan">
+    <div class="container">
+      <div class="section-header light">
+        <div class="section-tag">Administrasi</div>
+        <h2 class="section-title">Layanan <span class="accent">Surat & Pengajuan</span></h2>
+        <p class="section-desc">Ajukan kebutuhan administrasi Anda secara online</p>
+      </div>
+
+      <!-- TABS -->
+      <div class="tabs-wrapper">
+        <div class="tabs" id="formTabs">
+          <button class="tab active" data-tab="domisili">Surat Domisili</button>
+          <button class="tab" data-tab="pengantar">Surat Pengantar</button>
+          <button class="tab" data-tab="kematian">Surat Keterangan Kematian</button>
+          <button class="tab" data-tab="pindah">Surat Pindah</button>
+          <button class="tab" data-tab="keluhan">Keluhan & Saran</button>
+        </div>
+      </div>
+
+      <!-- FORM: Domisili -->
+      <div class="form-panel active" id="tab-domisili">
+        <div class="form-card">
+          <div class="form-header">
+            <div class="form-icon">🏠</div>
+            <div>
+              <h3>Surat Keterangan Domisili</h3>
+              <p>Untuk keperluan administrasi bank, institusi, atau instansi lainnya</p>
+            </div>
+          </div>
+          <form class="rt-form" id="formDomisili">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nama Lengkap <span class="req">*</span></label>
+                <input type="text" name="nama" placeholder="Sesuai KTP" required />
+              </div>
+              <div class="form-group">
+                <label>NIK <span class="req">*</span></label>
+                <input type="text" name="nik" placeholder="16 digit NIK" maxlength="16" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Tempat, Tanggal Lahir <span class="req">*</span></label>
+                <input type="text" name="ttl" placeholder="Jakarta, 01 Januari 1990" required />
+              </div>
+              <div class="form-group">
+                <label>Jenis Kelamin <span class="req">*</span></label>
+                <select name="jk" required>
+                  <option value="">Pilih...</option>
+                  <option>Laki-laki</option>
+                  <option>Perempuan</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full">
+              <label>Alamat Lengkap <span class="req">*</span></label>
+              <textarea name="alamat" rows="2" placeholder="Nama jalan, nomor rumah, RT/RW..." required></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Agama</label>
+                <select name="agama">
+                  <option value="">Pilih...</option>
+                  <option>Islam</option><option>Kristen</option><option>Katolik</option>
+                  <option>Hindu</option><option>Buddha</option><option>Konghucu</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Pekerjaan</label>
+                <input type="text" name="pekerjaan" placeholder="Pekerjaan saat ini" />
+              </div>
+            </div>
+            <div class="form-group full">
+              <label>Keperluan Surat <span class="req">*</span></label>
+              <input type="text" name="keperluan" placeholder="Contoh: Pembukaan rekening bank, melamar kerja, dll." required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nomor HP/WA <span class="req">*</span></label>
+                <input type="tel" name="hp" placeholder="08xxxxxxxxxx" required />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="email@contoh.com" />
+              </div>
+            </div>
+            <div class="form-group full">
+              <label>Upload KTP (opsional)</label>
+              <div class="file-drop" id="dropDomisili">
+                <input type="file" name="ktp" accept="image/*,.pdf" class="file-input" />
+                <div class="file-label">
+                  <span class="file-icon">📎</span>
+                  <span>Klik atau seret file KTP ke sini</span>
+                  <small>JPG, PNG, atau PDF · Maks 2MB</small>
+                </div>
+              </div>
+            </div>
+            <div class="form-notice">
+              <span>ℹ️</span> Pengajuan akan diproses dalam 1–2 hari kerja. Harap membawa KTP asli saat pengambilan surat.
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Kirim Pengajuan</span>
+              <span class="btn-loader" style="display:none">⏳ Mengirim...</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FORM: Pengantar -->
+      <div class="form-panel" id="tab-pengantar">
+        <div class="form-card">
+          <div class="form-header">
+            <div class="form-icon">📄</div>
+            <div>
+              <h3>Surat Pengantar RT</h3>
+              <p>Pengantar untuk mengurus dokumen ke Kelurahan atau instansi lain</p>
+            </div>
+          </div>
+          <form class="rt-form" id="formPengantar">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nama Lengkap <span class="req">*</span></label>
+                <input type="text" name="nama" placeholder="Sesuai KTP" required />
+              </div>
+              <div class="form-group">
+                <label>NIK <span class="req">*</span></label>
+                <input type="text" name="nik" placeholder="16 digit NIK" maxlength="16" required />
+              </div>
+            </div>
+            <div class="form-group full">
+              <label>Jenis Dokumen yang Diurus <span class="req">*</span></label>
+              <select name="jenis_dokumen" required>
+                <option value="">Pilih jenis dokumen...</option>
+                <option>KTP Baru</option>
+                <option>KTP Perpanjangan / Rusak / Hilang</option>
+                <option>Kartu Keluarga (KK) Baru</option>
+                <option>Perubahan KK</option>
+                <option>Akta Kelahiran</option>
+                <option>Akta Pernikahan</option>
+                <option>Akta Kematian</option>
+                <option>SKCK</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div class="form-group full" id="lainnyaGroup" style="display:none">
+              <label>Sebutkan Jenis Dokumen</label>
+              <input type="text" name="dokumen_lain" placeholder="Tuliskan jenis dokumen..." />
+            </div>
+            <div class="form-group full">
+              <label>Tujuan Surat Pengantar <span class="req">*</span></label>
+              <input type="text" name="tujuan" placeholder="Contoh: Kantor Kelurahan Cipete Utara" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nomor HP/WA <span class="req">*</span></label>
+                <input type="tel" name="hp" placeholder="08xxxxxxxxxx" required />
+              </div>
+              <div class="form-group">
+                <label>Catatan Tambahan</label>
+                <input type="text" name="catatan" placeholder="Opsional..." />
+              </div>
+            </div>
+            <div class="form-notice">
+              <span>ℹ️</span> Surat pengantar tersedia dalam 1 hari kerja. Harap konfirmasi via WhatsApp setelah submit.
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Kirim Pengajuan</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FORM: Kematian -->
+      <div class="form-panel" id="tab-kematian">
+        <div class="form-card">
+          <div class="form-header">
+            <div class="form-icon">🕊️</div>
+            <div>
+              <h3>Surat Keterangan Kematian</h3>
+              <p>Laporan dan pengajuan surat keterangan untuk warga yang berpulang</p>
+            </div>
+          </div>
+          <form class="rt-form" id="formKematian">
+            <fieldset class="form-fieldset">
+              <legend>Data Almarhum/Almarhumah</legend>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Nama Lengkap <span class="req">*</span></label>
+                  <input type="text" name="nama_alm" placeholder="Nama yang berpulang" required />
+                </div>
+                <div class="form-group">
+                  <label>NIK</label>
+                  <input type="text" name="nik_alm" placeholder="NIK almarhum/ah" maxlength="16" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Tanggal Lahir</label>
+                  <input type="date" name="tgl_lahir" />
+                </div>
+                <div class="form-group">
+                  <label>Tanggal Wafat <span class="req">*</span></label>
+                  <input type="date" name="tgl_wafat" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Tempat Wafat <span class="req">*</span></label>
+                  <input type="text" name="tempat_wafat" placeholder="RS, rumah, dll." required />
+                </div>
+                <div class="form-group">
+                  <label>Penyebab Kematian</label>
+                  <input type="text" name="penyebab" placeholder="Opsional" />
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form-fieldset">
+              <legend>Data Pelapor</legend>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Nama Pelapor <span class="req">*</span></label>
+                  <input type="text" name="nama_pelapor" required />
+                </div>
+                <div class="form-group">
+                  <label>Hubungan dengan Almarhum <span class="req">*</span></label>
+                  <select name="hubungan" required>
+                    <option value="">Pilih...</option>
+                    <option>Anak</option><option>Suami/Istri</option>
+                    <option>Orang Tua</option><option>Saudara</option><option>Lainnya</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Nomor HP/WA <span class="req">*</span></label>
+                  <input type="tel" name="hp_pelapor" placeholder="08xxxxxxxxxx" required />
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" name="email_pelapor" placeholder="email@contoh.com" />
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary btn-full">Kirim Laporan</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FORM: Pindah -->
+      <div class="form-panel" id="tab-pindah">
+        <div class="form-card">
+          <div class="form-header">
+            <div class="form-icon">🚚</div>
+            <div>
+              <h3>Surat Keterangan Pindah</h3>
+              <p>Untuk warga yang akan pindah keluar dari wilayah RT 005</p>
+            </div>
+          </div>
+          <form class="rt-form" id="formPindah">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nama KK <span class="req">*</span></label>
+                <input type="text" name="nama_kk" placeholder="Nama kepala keluarga" required />
+              </div>
+              <div class="form-group">
+                <label>No. KK <span class="req">*</span></label>
+                <input type="text" name="no_kk" placeholder="Nomor Kartu Keluarga" maxlength="16" required />
+              </div>
+            </div>
+            <div class="form-group full">
+              <label>Alamat Asal (Saat Ini) <span class="req">*</span></label>
+              <textarea name="alamat_asal" rows="2" placeholder="Alamat lengkap di RT 005..." required></textarea>
+            </div>
+            <div class="form-group full">
+              <label>Alamat Tujuan <span class="req">*</span></label>
+              <textarea name="alamat_tujuan" rows="2" placeholder="Alamat tujuan kepindahan..." required></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Rencana Tanggal Pindah <span class="req">*</span></label>
+                <input type="date" name="tgl_pindah" required />
+              </div>
+              <div class="form-group">
+                <label>Alasan Pindah</label>
+                <select name="alasan">
+                  <option value="">Pilih alasan...</option>
+                  <option>Pekerjaan</option><option>Pendidikan</option>
+                  <option>Mengikuti Suami/Istri</option><option>Membeli Rumah Baru</option>
+                  <option>Lainnya</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full">
+              <label>Jumlah Anggota Keluarga yang Pindah</label>
+              <input type="number" name="jml_anggota" min="1" max="20" placeholder="Jumlah orang" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nomor HP/WA <span class="req">*</span></label>
+                <input type="tel" name="hp" placeholder="08xxxxxxxxxx" required />
+              </div>
+            </div>
+            <div class="form-notice warning">
+              <span>⚠️</span> Harap melapor langsung ke sekretariat RT minimal 3 hari sebelum tanggal pindah untuk penyelesaian administrasi.
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Kirim Pengajuan</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FORM: Keluhan -->
+      <div class="form-panel" id="tab-keluhan">
+        <div class="form-card">
+          <div class="form-header">
+            <div class="form-icon">💬</div>
+            <div>
+              <h3>Keluhan, Saran & Aspirasi</h3>
+              <p>Sampaikan aspirasi Anda untuk lingkungan yang lebih baik</p>
+            </div>
+          </div>
+          <form class="rt-form" id="formKeluhan">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nama <span class="req">*</span></label>
+                <input type="text" name="nama" placeholder="Nama Anda" required />
+              </div>
+              <div class="form-group">
+                <label>Nomor HP/WA <span class="req">*</span></label>
+                <input type="tel" name="hp" placeholder="08xxxxxxxxxx" required />
+              </div>
+            </div>
+            <div class="form-group full">
+              <label>Alamat</label>
+              <input type="text" name="alamat" placeholder="Nomor rumah / blok (opsional)" />
+            </div>
+            <div class="form-group full">
+              <label>Kategori <span class="req">*</span></label>
+              <div class="radio-group">
+                <label class="radio-label"><input type="radio" name="kategori" value="keluhan" required/> <span>Keluhan</span></label>
+                <label class="radio-label"><input type="radio" name="kategori" value="saran" /> <span>Saran</span></label>
+                <label class="radio-label"><input type="radio" name="kategori" value="aspirasi" /> <span>Aspirasi</span></label>
+                <label class="radio-label"><input type="radio" name="kategori" value="apresiasi" /> <span>Apresiasi</span></label>
+              </div>
+            </div>
+            <div class="form-group full">
+              <label>Bidang <span class="req">*</span></label>
+              <select name="bidang" required>
+                <option value="">Pilih bidang...</option>
+                <option>Kebersihan & Lingkungan</option>
+                <option>Keamanan & Ketertiban</option>
+                <option>Infrastruktur (Jalan, Saluran)</option>
+                <option>Administrasi & Pelayanan RT</option>
+                <option>Sosial & Kemasyarakatan</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label>Isi Pesan <span class="req">*</span></label>
+              <textarea name="pesan" rows="5" placeholder="Tuliskan keluhan, saran, atau aspirasi Anda dengan jelas dan santun..." required></textarea>
+            </div>
+            <div class="form-group full">
+              <label>Lampiran (opsional)</label>
+              <div class="file-drop">
+                <input type="file" name="lampiran" accept="image/*" class="file-input" />
+                <div class="file-label">
+                  <span class="file-icon">📷</span>
+                  <span>Upload foto pendukung (opsional)</span>
+                  <small>JPG atau PNG · Maks 3MB</small>
+                </div>
+              </div>
+            </div>
+            <div class="form-check">
+              <label class="checkbox-label">
+                <input type="checkbox" name="anonim" />
+                <span>Kirim secara anonim (nama tidak akan ditampilkan)</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PENGURUS -->
+  <section class="section" id="pengurus">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Struktur Organisasi</div>
+        <h2 class="section-title">Pengurus <span class="accent">RT 005</span></h2>
+        <p class="section-desc">Periode 2023 – 2026</p>
+      </div>
+      <div class="pengurus-grid">
+        <div class="pengurus-card ketua">
+          <div class="pengurus-avatar">👨‍💼</div>
+          <div class="pengurus-info">
+            <div class="pengurus-role">Ketua RT</div>
+            <div class="pengurus-name">Bpk. Ahmad Fauzi, S.E.</div>
+            <a href="tel:081234567890" class="pengurus-contact">📱 0812-3456-7890</a>
+          </div>
+        </div>
+        <div class="pengurus-card">
+          <div class="pengurus-avatar">👩‍💼</div>
+          <div class="pengurus-info">
+            <div class="pengurus-role">Sekretaris</div>
+            <div class="pengurus-name">Ibu Sari Dewi, S.H.</div>
+            <a href="tel:081298765432" class="pengurus-contact">📱 0812-9876-5432</a>
+          </div>
+        </div>
+        <div class="pengurus-card">
+          <div class="pengurus-avatar">👨‍💼</div>
+          <div class="pengurus-info">
+            <div class="pengurus-role">Bendahara</div>
+            <div class="pengurus-name">Bpk. Budi Santoso</div>
+            <a href="tel:081312345678" class="pengurus-contact">📱 0813-1234-5678</a>
+          </div>
+        </div>
+        <div class="pengurus-card">
+          <div class="pengurus-avatar">👨‍🦱</div>
+          <div class="pengurus-info">
+            <div class="pengurus-role">Bid. Keamanan</div>
+            <div class="pengurus-name">Bpk. Hendra Wijaya</div>
+            <a href="tel:085612345678" class="pengurus-contact">📱 0856-1234-5678</a>
+          </div>
+        </div>
+        <div class="pengurus-card">
+          <div class="pengurus-avatar">👩‍🦰</div>
+          <div class="pengurus-info">
+            <div class="pengurus-role">Bid. Sosial & PKK</div>
+            <div class="pengurus-name">Ibu Ratna Putri</div>
+            <a href="tel:081512345678" class="pengurus-contact">📱 0815-1234-5678</a>
+          </div>
+        </div>
+        <div class="pengurus-card">
+          <div class="pengurus-avatar">👨</div>
+          <div class="pengurus-info">
+            <div class="pengurus-role">Bid. Kebersihan</div>
+            <div class="pengurus-name">Bpk. Dedi Kurniawan</div>
+            <a href="tel:082312345678" class="pengurus-contact">📱 0823-1234-5678</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section class="section section-light" id="galeri">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Dokumentasi</div>
+        <h2 class="section-title">Galeri <span class="accent">Kegiatan</span></h2>
+        <p class="section-desc">Dokumentasi berbagai kegiatan lingkungan RT 005</p>
+      </div>
+      <div class="galeri-grid">
+        <div class="galeri-item" style="--delay:0s">
+          <div class="galeri-thumb g1"></div>
+          <div class="galeri-overlay"><span>Kerja Bakti April 2025</span></div>
+        </div>
+        <div class="galeri-item" style="--delay:.1s">
+          <div class="galeri-thumb g2"></div>
+          <div class="galeri-overlay"><span>Posyandu Maret 2025</span></div>
+        </div>
+        <div class="galeri-item" style="--delay:.2s">
+          <div class="galeri-thumb g3"></div>
+          <div class="galeri-overlay"><span>HUT RI Agustus 2024</span></div>
+        </div>
+        <div class="galeri-item" style="--delay:.3s">
+          <div class="galeri-thumb g4"></div>
+          <div class="galeri-overlay"><span>Rapat Warga Februari 2025</span></div>
+        </div>
+        <div class="galeri-item" style="--delay:.4s">
+          <div class="galeri-thumb g5"></div>
+          <div class="galeri-overlay"><span>Bagi-bagi Sembako 2024</span></div>
+        </div>
+        <div class="galeri-item" style="--delay:.5s">
+          <div class="galeri-thumb g6"></div>
+          <div class="galeri-overlay"><span>Pengajian Rutin 2025</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="section section-dark" id="kontak">
+    <div class="container">
+      <div class="section-header light">
+        <div class="section-tag">Hubungi Kami</div>
+        <h2 class="section-title">Kontak <span class="accent">& Lokasi</span></h2>
+        <p class="section-desc">Kami siap membantu kebutuhan administrasi Anda</p>
+      </div>
+      <div class="kontak-grid">
+        <div class="kontak-info">
+          <div class="kontak-item">
+            <div class="kontak-icon">📍</div>
+            <div>
+              <strong>Sekretariat RT 005</strong>
+              <p>Jl. Cipete Raya No. 45 RT 005/012<br/>Kel. Cipete Utara, Kec. Cilandak<br/>Jakarta Selatan 12410</p>
+            </div>
+          </div>
+          <div class="kontak-item">
+            <div class="kontak-icon">⏰</div>
+            <div>
+              <strong>Jam Pelayanan</strong>
+              <p>Senin – Jumat: 09.00 – 17.00 WIB<br/>Sabtu: 09.00 – 13.00 WIB<br/>Minggu & Hari Libur: Tutup</p>
+            </div>
+          </div>
+          <div class="kontak-item">
+            <div class="kontak-icon">📱</div>
+            <div>
+              <strong>WhatsApp Sekretariat</strong>
+              <p>0812-3456-7890 (Ketua RT)<br/>Respon aktif jam kerja</p>
+            </div>
+          </div>
+          <div class="kontak-item">
+            <div class="kontak-icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <p>rt005rw012.cipeteutara@gmail.com</p>
+            </div>
+          </div>
+          <div class="sosmed-links">
+            <a href="#" class="sosmed-btn wa">💬 WhatsApp</a>
+            <a href="#" class="sosmed-btn tg">✈️ Telegram</a>
+            <a href="#" class="sosmed-btn ig">📷 Instagram</a>
+          </div>
+        </div>
+        <div class="map-placeholder">
+          <div class="map-embed">
+            <div class="map-icon">🗺️</div>
+            <p>Peta Lokasi Sekretariat RT</p>
+            <small>Jl. Cipete Raya No. 45, Jakarta Selatan</small>
+            <a href="https://maps.google.com" target="_blank" class="btn btn-outline-light">Buka di Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="logo-emblem sm">RT</div>
+          <div>
+            <strong>RT 005 / RW 012</strong><br/>
+            Kelurahan Cipete Utara, Jakarta Selatan
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#beranda">Beranda</a>
+          <a href="#pengumuman">Pengumuman</a>
+          <a href="#layanan">Layanan</a>
+          <a href="#pengurus">Pengurus</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+        <div class="footer-copy">
+          © 2025 RT 005/RW 012 Cipete Utara. Dibuat dengan ❤️ untuk warga.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SUCCESS MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <div class="modal-icon">✅</div>
+      <h3>Pengajuan Berhasil Dikirim!</h3>
+      <p id="modalMsg">Pengajuan Anda telah kami terima. Kami akan menghubungi Anda melalui WhatsApp dalam 1–2 hari kerja.</p>
+      <button class="btn btn-primary" onclick="closeModal()">Tutup</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
