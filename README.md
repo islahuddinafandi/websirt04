@@ -1,4 +1,4 @@
-# 🏘️ Website RT 005 / RW 012 — Cipete Utara
+# 🏘️ Website RT 004 / RW 024 — Pondok Benda Pamulang
 
 Website resmi administrasi RT berbasis HTML/CSS/JS dengan Firebase Hosting & Firestore.
 
@@ -36,7 +36,7 @@ firebase login
 
 ### 3. Buat Firebase Project
 - Buka https://console.firebase.google.com
-- Klik **Add project** → beri nama (misal: `rt005-cipeteutara`)
+- Klik **Add project** → beri nama (misal: `rt004-bsr`)
 - Aktifkan **Firestore Database** (mode Production)
 - Aktifkan **Storage**
 - Aktifkan **Hosting**
