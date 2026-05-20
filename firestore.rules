@@ -1,0 +1,36 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Koleksi pengajuan surat — warga bisa menulis, hanya admin yang bisa baca semua
+    match /domisili/{doc} {
+      allow create: if request.resource.data.keys().hasAll(['nama', 'nik', 'hp']);
+      allow read, update, delete: if false; // Hanya via Firebase Console / Admin SDK
+    }
+
+    match /pengantar/{doc} {
+      allow create: if request.resource.data.keys().hasAll(['nama', 'nik', 'hp']);
+      allow read, update, delete: if false;
+    }
+
+    match /kematian/{doc} {
+      allow create: if request.resource.data.keys().hasAll(['nama_alm', 'tgl_wafat', 'hp_pelapor']);
+      allow read, update, delete: if false;
+    }
+
+    match /pindah/{doc} {
+      allow create: if request.resource.data.keys().hasAll(['nama_kk', 'no_kk', 'hp']);
+      allow read, update, delete: if false;
+    }
+
+    match /keluhan/{doc} {
+      allow create: if request.resource.data.keys().hasAll(['nama', 'hp', 'pesan']);
+      allow read, update, delete: if false;
+    }
+
+    // Default: tolak semua akses lainnya
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
